@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        
+    <meta>    
+    <link rel="stylesheet" href="styleeheet.css">
+    <title>Agenda Web</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="http://www.raydelto.org/agenda.php" method="POST">
+            <div class="formulario">
+                <h2>Agenda Web Luis Taveras</h2>
+                <div class="formulario-datos">
+                    <input name="nombre" type="text" class="nombre" placeholder="Nombre">
+                    <input name="apellido" type="text" class="Apellido" placeholder="Apellido">
+                    <input name="telefono" type="text" class="Telefono" placeholder="Telefono">
+                    <button class="btn btn-primary btn-block">Agregar Contacto</button>
+                </div>
+            </div>    
+        </form>
+       
+
+        <div class="row mt-3">
+            <div class="col">
+                <h2>Listado de datos</h2>
+                <div class="my-3">
+                    <table class="table" id="listadatos">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Telefono</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="logicaAgenda.js">
+     
+    </script>
+    
+    
+
+</body>
+
+</html>
